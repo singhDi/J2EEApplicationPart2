@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Submit Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container bg-faded mt-5 p-5">
+		<header class="h2 text-center">Sign Up</header>
+		<form action="Submit" method="post">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 mt-2">
+					<label for="firstName" class="font-weight-bold">First Name</label>
+					<input type="text" name="fname" class="form-control"
+						placeholder="First name">
+				</div>
+				<div class="col-md-6 col-sm-12 mt-2">
+					<label for="lastName" class="font-weight-bold">Last Name </label> <input
+						type="text" name="lname" class="form-control"
+						placeholder="Last name">
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-6 col-sm-12 mt-2">
+					<label for="email" class="font-weight-bold">Email</label> <input
+						type="email" name="email" class="form-control"
+						placeholder="example@notreal.notreal">
+				</div>
+				<div class="col-md-6 col-sm-12 mt-2">
+					<label for="phone" class="font-weight-bold">Phone Number</label> <input
+						type="tel" name="phone" class="form-control"
+						placeholder="(444)444-4444" pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}'
+						required>
+				</div>
+			</div>
+
+			<div class="row mt-2">
+				<div class="col-md-6 col-sm-12 mt-2">
+					<label for="shipping" class="font-weight-bold">Gender</label>
+					<br/>
+					<div class="form-check form-check-inline ">
+						<input type="radio" name="gender" value="M"> <label
+							for="M"> Male</label>
+					</div>
+					<div class="form-check form-check-inline ">
+						<input type="radio" name="gender" value="F"> <label
+							for="F"> Female</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row mt-2">
+				<div class="col-md-6 col-sm-12">
+					<div class="row">
+						
+						<div class="col-sm-12 col-md-6">
+						<label for="Name" class="font-weight-bold">Password</label>
+							 <input	type="password" name="password" class="form-control" 
+								placeholder="Password">
+						</div>
+						<div class="col-sm-0 col-md-3">
+						&nbsp;
+						</div>
+						<div class="col-sm-0 col-md-3">
+						&nbsp;
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<label for="email" class="font-weight-bold">Confirm
+						Password</label> <input type="password" name="confirmPassword"
+						class="form-control" value="" placeholder="Confirm Password">
+				</div>
+
+			</div>
+
+			<div class="mt-4">
+				<div align="center">
+					<input type="reset" class="btn btn-lg btn-info"> <input
+						type="submit" class="btn btn-lg btn-info" value="Submit">
+				</div>
+
+			</div>
+
+		</form>
+		<div class="row mt-4 modal-footer ">
+
+			<div class="col-12  text-center ">© 2018 Copyright</div>
+		</div>
+	</div>
+</body>
+</html>
